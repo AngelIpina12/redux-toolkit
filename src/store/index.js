@@ -17,6 +17,5 @@ const store = configureStore({
     reducer: { songs: songsSlice.reducer }
 })
 
-store.dispatch(songsSlice.actions.addSong("New song!")) 
-const finalState = store.getState();
-console.log(finalState);
+export {store};
+export const { addSong, removeSong } = songsSlice.actions;
