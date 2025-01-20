@@ -4,16 +4,9 @@ import { addSong, removeSong } from '../store';
 
 function SongPlaylist() {
     const dispatch = useDispatch();
-    const songPlaylist = useSelector((state) => {
-        return state.songs;
-    });
-
-    const handleSongAdd = (song) => {
-        dispatch(addSong(song));
-    };
-    const handleSongRemove = (song) => {
-        dispatch(removeSong(song));
-    };
+    const songPlaylist = useSelector(state => state.songs);
+    const handleSongAdd = (song) => { dispatch(addSong(song)) };
+    const handleSongRemove = (song) => { dispatch(removeSong(song)) };
 
     const renderedSongs = songPlaylist.map((song) => {
         return (
