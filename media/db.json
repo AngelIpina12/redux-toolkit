@@ -33,6 +33,12 @@
       "id": 16
     }
   ],
-  "albums": [],
+  "albums": [
+    {
+      "id": 1,
+      "title": "A New Type of Album",
+      "userId": 9
+    }
+  ],
   "photos": []
 }
