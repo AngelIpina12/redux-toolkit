@@ -38,7 +38,7 @@ function UsersList() {
       <h1 className='m-2 text-xl'>Users</h1>
       {
         isLoadingCreate ? 'Creating user...' :
-          <Button onClick={doCreateUsers}>+ Add User</Button>
+          <Button loading={isLoadingCreate} onClick={doCreateUsers}>+ Add User</Button>
       }
       {loadingCreateError && 'Error creating user...'}
     </div>
