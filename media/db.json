@@ -38,6 +38,16 @@
       "id": 1,
       "title": "A New Type of Album",
       "userId": 9
+    },
+    {
+      "userId": 9,
+      "title": "Practical Fresh Chips",
+      "id": 2
+    },
+    {
+      "userId": 9,
+      "title": "Gorgeous Metal Soap",
+      "id": 3
     }
   ],
   "photos": []
