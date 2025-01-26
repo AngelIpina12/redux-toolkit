@@ -5,10 +5,6 @@
       "id": 9
     },
     {
-      "name": "Samuel Bartoletti",
-      "id": 10
-    },
-    {
       "name": "Brandi Kshlerin",
       "id": 11
     },
@@ -33,47 +29,6 @@
       "id": 16
     }
   ],
-  "albums": [
-    {
-      "id": 1,
-      "title": "A New Type of Album",
-      "userId": 9
-    },
-    {
-      "userId": 9,
-      "title": "Practical Fresh Chips",
-      "id": 2
-    },
-    {
-      "userId": 9,
-      "title": "Gorgeous Metal Soap",
-      "id": 3
-    },
-    {
-      "userId": 9,
-      "title": "Recycled Bronze Sausages",
-      "id": 4
-    },
-    {
-      "userId": 9,
-      "title": "Handcrafted Metal Towels",
-      "id": 5
-    },
-    {
-      "userId": 10,
-      "title": "Fantastic Concrete Ball",
-      "id": 6
-    },
-    {
-      "userId": 10,
-      "title": "Handcrafted Granite Shirt",
-      "id": 7
-    },
-    {
-      "userId": 10,
-      "title": "Luxurious Soft Shirt",
-      "id": 8
-    }
-  ],
+  "albums": [],
   "photos": []
 }
