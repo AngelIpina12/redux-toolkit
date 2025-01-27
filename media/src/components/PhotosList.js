@@ -1,12 +1,22 @@
 import React from 'react'
 import { useFetchPhotosQuery, useAddPhotoMutation } from '../store'
 import Button from './Button'
+import Skeleton from './Skeleton'
+import { PhotosListItem } from './PhotosListItem'
 
 export const PhotosList = ({ album }) => {
-    useFetchPhotosQuery(album);
+    const { data, isFetching, error } = useFetchPhotosQuery(album);
     const [addPhoto, addPhotoResults] = useAddPhotoMutation();
     const handleAddPhoto = () => {
         addPhoto(album);
+    }
+    let content;
+    if (isFetching) {
+        content = <Skeleton className="h-8 w-8" times={4}/>;
+    }else if(error){
+        content = <p>Failed to load photos</p>;
+    }else{
+        content = data.map((photo, index) => <PhotosListItem key={index} photo={photo}/>);
     }
 
     return (
@@ -17,6 +27,7 @@ export const PhotosList = ({ album }) => {
                     + Add Photo
                 </Button>
             </div>
+            <div className='mx-8 flex flex-row flex-wrap justify-center'>{content}</div>
         </div>
     )
 }
