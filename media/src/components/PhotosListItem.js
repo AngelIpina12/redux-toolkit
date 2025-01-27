@@ -4,7 +4,6 @@ import { useRemovePhotoMutation } from '../store'
 
 export const PhotosListItem = ({ photo }) => {
     const [removePhoto] = useRemovePhotoMutation(photo.id);
-    
     const handleRemovePhoto = () => {
         removePhoto(photo);
     }
