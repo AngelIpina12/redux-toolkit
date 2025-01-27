@@ -29,6 +29,23 @@
       "id": 16
     }
   ],
-  "albums": [],
-  "photos": []
+  "albums": [
+    {
+      "userId": 9,
+      "title": "Recycled Bronze Keyboard",
+      "id": 1
+    }
+  ],
+  "photos": [
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150/abstract?lock=7031",
+      "id": 1
+    },
+    {
+      "albumId": 1,
+      "url": "https://loremflickr.com/150/150/abstract?lock=70356",
+      "id": 2
+    }
+  ]
 }
